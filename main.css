@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 180px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+input, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 45%;
+}
+
+.success-msg {
+    background-color: green;
+    color: #fff;
+    padding: 10px 0;
+    width: 45%;
+    display: none;
+}
+
+.fail-msg {
+    background-color: red;
+    color: #fff;
+    padding: 10px 0;
+    width: 45%;
+    display: none;
+}
