@@ -19,7 +19,11 @@ body {
 
 form {
     padding: 24px 0;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+form button {
+    margin-left: 8px;
 }
 
 ul li{
@@ -27,7 +31,11 @@ ul li{
     text-align: center;  
     font-weight: bold;
     font-size: 20px;
-    text-decoration: none; 
+}
+
+li {
+    list-style: disc;
+    list-style-type: square;
 }
 
 .tarefa-feita {

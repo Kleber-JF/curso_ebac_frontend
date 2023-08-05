@@ -1,19 +1,16 @@
 $(document).ready(function() {
-    $('li').click(function() {
-        if($(this).hasClass('tarefa-nao-feita')) {
-         $(this).removeClass('tarefa-nao-feita').addClass('tarefa-feita');
-        } else {
-         $(this).removeClass('tarefa-feita').addClass('tarefa-nao-feita');
-        }
-     })
-
-     $('form').on('submit', function(e) {
+ 
+    $('form').on('submit', function(e) {
         e.preventDefault();
         const nomeTarefa = $('#nome-tarefa').val();
-        let novaTarefa = $(`<li class="tarefa-nao-feita">${nomeTarefa}</li>`);
+        let novaTarefa = $(`<li>${nomeTarefa}</li>`);
     
-        $(novaTarefa).appendTo('ul');
+        $(novaTarefa).appendTo('.lista-tarefas ul');
         
         $('#nome-tarefa').val('');
-    })  
+    }) 
+        
+        $('.lista-tarefas').on('click', 'li', function() {
+            $(this).toggleClass('tarefa-feita');
+    })
 })
