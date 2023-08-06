@@ -2,49 +2,40 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
 }
 
-header {
-    padding: 16px 0;
+h1{
     text-align: center;
-    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-body {
-    max-width: 1920px;
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea {
     width: 100%;
-    background-color: aquamarine;
+    display: block;
+    padding: 8px;
 }
 
 form {
-    padding: 24px 0;
-    justify-content: center;
-    display: flex;
+    max-width: 360px;
 }
+
 form button {
-    margin-left: 8px;
-}
-
-ul li{
-    display: block;
-    text-align: center;  
-    font-weight: bold;
-    font-size: 20px;
-}
-
-li {
-    list-style: disc;
-    list-style-type: square;
-}
-
-.tarefa-feita {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: line-through;
-}
-
-li:hover {
-    cursor: pointer;
+    max-width: 300px;
+    width: 100%; 
+    height: 24px;
 }
