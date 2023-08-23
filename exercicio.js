@@ -1,25 +1,18 @@
-function Animal(tipo) {
-    this.tipo = tipo;
+// Array de objetos representando alunos
+const alunos = [
+    { nome: 'João', nota: 7 },
+    { nome: 'Maria', nota: 5 },
+    { nome: 'Carlos', nota: 8 },
+    { nome: 'Ana', nota: 6 },
+    { nome: 'Pedro', nota: 4 }
+];
+
+// Função para retornar alunos com nota maior ou igual a 6
+function alunosAprovados(arrayAlunos) {
+    return arrayAlunos.filter(aluno => aluno.nota >= 6);
 }
 
-function Vaca(tipo, habitat, dieta) {
-    Animal.call(this,tipo);
-    this.habitat = habitat;
-    this.dieta = dieta;
-    this.muge = function(){
-        console.log(this.tipo + " faz MUUU")
-    }
-}
-
-function Galinha(tipo, raca, cor) {
-    Animal.call(this, tipo);
-    this.raca = raca;
-    this.cor = cor;
-    this.cacareja = function(){
-        console.log(this.tipo + " faz cocóricó")
-    }
-}
-
-const vaca1 = new Vaca("vaca", "pasto", "herbivoro");
-const galinha1 = new Galinha("galinha", "Caipira", "marrom");
-const galinha2 = new Galinha("galo", "Sura", "branco");
+// Chamada da função e exibição dos resultados
+const alunosAprovadosArray = alunosAprovados(alunos);
+console.log('Alunos aprovados:');
+console.log(alunosAprovadosArray);
